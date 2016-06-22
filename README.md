@@ -1,8 +1,12 @@
 # Scrollytelling::Pageflow::Navigation
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/scrollytelling/pageflow/navigation`. To experiment with that code, run `bin/console` for an interactive prompt.
+This Pageflow plugin replaces the built-in Pageflow navigation with the Scrollytelling version.
 
-TODO: Delete this and the text above, and describe your gem
+The Scrollytelling navigation uses dots to show progress instead of thumbnails. This plugin does not replace the mobile Pageflow navigation; only the desktop navigation.
+
+## Examples
+
+For examples see the various stories on [our homepage](https://www.scrollytelling.io/).
 
 ## Installation
 
@@ -12,17 +16,26 @@ Add this line to your application's Gemfile:
 gem 'scrollytelling-pageflow-navigation'
 ```
 
-And then execute:
+Bundle the plugin with your application by typing this on the command line:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install scrollytelling-pageflow-navigation
-
 ## Usage
 
-TODO: Write usage instructions here
+You will need to register the plugin in the Pageflow initializer and then add it to your asset pipeline.
+
+```
+# config/initializers/pageflow.rb
+config.plugin(Scrollytelling::Pageflow::Navigation::Plugin.new)
+
+# app/assets/javascripts/pageflow/application.js
+//= require scrollytelling/pageflow/navigation
+
+# app/assets/stylesheets/pageflow/application.css.scss
+@import "scrollytelling/pageflow/navigation";
+```
+
+After all that, restart your application server.
 
 ## Development
 
