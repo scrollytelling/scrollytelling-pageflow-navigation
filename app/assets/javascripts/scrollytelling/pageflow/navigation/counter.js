@@ -1,6 +1,6 @@
 pageflow.Counter = {
   navigation: function() {
-    return $('#scrollytelling-pageflow-navigation')
+    return $('#scrollytelling-pageflow-navigation');
   },
 
   setActive: function(page) {
@@ -23,14 +23,13 @@ pageflow.Counter = {
     $('a', this.navigation()).on('click', this.onClick);
   },
 
-  onClick(event) {
+  onClick: function(event) {
     event.preventDefault();
 
     var page_id = $(this).attr('data-page-id');
 
     pageflow.atmo.slideshow.goToById(page_id);
   }
-
 }
 
 pageflow.ready.then(function() {
