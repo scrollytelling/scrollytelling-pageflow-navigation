@@ -5,7 +5,7 @@ module Scrollytelling
     module Navigation
       class WidgetType < ::Pageflow::WidgetType
         def name
-          'scrollytelling-pageflow-navigation'
+          'scrollytelling_pageflow_navigation'
         end
 
         def roles

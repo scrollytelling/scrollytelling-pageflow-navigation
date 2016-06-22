@@ -35,6 +35,13 @@ config.plugin(Scrollytelling::Pageflow::Navigation::Plugin.new)
 @import "scrollytelling/pageflow/navigation";
 ```
 
+Furthermore after installing any Pageflow plugin it's a good idea to change your asset version. This will invalidate all server-side cache, most notably the cache that `i18n-js` uses to render the editor UI.
+
+```
+# config/initializers/assets.rb
+Rails.application.config.assets.version = 'x.x.x'
+```
+
 After all that, restart your application server.
 
 ## Development
