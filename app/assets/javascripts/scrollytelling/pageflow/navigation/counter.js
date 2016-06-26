@@ -14,7 +14,7 @@ pageflow.Counter = {
 
   init: function() {
     // Init active dot
-    this.setActive(pageflow.atmo.slideshow.currentPage()[0]);
+    this.setActive(pageflow.slides.currentPage()[0]);
 
     // Listen to page changes
     pageflow.events.on('page:change', this.updateActive.bind(this));
@@ -28,7 +28,7 @@ pageflow.Counter = {
 
     var page_id = $(this).attr('data-page-id');
 
-    pageflow.atmo.slideshow.goToById(page_id);
+    pageflow.slides.goToById(page_id);
   }
 }
 

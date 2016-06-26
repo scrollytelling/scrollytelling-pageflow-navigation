@@ -14,7 +14,7 @@ pageflow.Invert = {
   init: function() {
 
     // Set inverted class on first load
-    this.setInvert(pageflow.atmo.slideshow.currentPage()[0]);
+    this.setInvert(pageflow.slides.currentPage()[0]);
 
     // Listen to page changes
     pageflow.events.on('page:change', this.changeInvert.bind(this));
