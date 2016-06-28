@@ -1,26 +1,22 @@
-pageflow.Counter = {
-  navigation: function() {
-    return $('#scrollytelling-pageflow-navigation');
-  },
-
+$.widget('scrollytelling.scrollytellingNavigationCounter', {
   setActive: function(page) {
-    this.navigation().find('a').removeClass('active');
-    this.navigation().find('a[href="#'+page.id+'"]').addClass('active');
+    this.element.find('a').removeClass('active');
+    this.element.find('a[href="#' + page.attr('id') + '"]').addClass('active');
   },
 
   updateActive: function(page) {
-    this.setActive(page.element[0]);
+    this.setActive(page.element);
   },
 
-  init: function() {
+  _create: function() {
     // Init active dot
-    this.setActive(pageflow.slides.currentPage()[0]);
+    this.setActive(pageflow.slides.currentPage());
 
     // Listen to page changes
     pageflow.events.on('page:change', this.updateActive.bind(this));
 
     // Set click handler
-    $('a', this.navigation()).on('click', this.onClick);
+    $('a', this.element).on('click', this.onClick);
   },
 
   onClick: function(event) {
@@ -30,8 +26,4 @@ pageflow.Counter = {
 
     pageflow.slides.goToById(page_id);
   }
-}
-
-pageflow.ready.then(function() {
-  pageflow.Counter.init();
 });

@@ -1,17 +1,26 @@
-<nav id="scrollytelling-pageflow-navigation">
-  <ul>
-    <% entry.pages.displayed_in_navigation.each do |page| %>
-      <li><a href="#<%= page.perma_id %>" data-page-id="<%= page.id %>"><span></span></a><div class="scrollytelling-pageflow-navigation-tooltip"><%= page.configuration["title"] %></div></li>
-    <% end %>
+<div data-widget="scrollytelling_pageflow_navigation">
+  <nav id="scrollytelling-pageflow-navigation">
+    <ul>
+      <% entry.pages.displayed_in_navigation.each do |page| %>
+        <li>
+          <a href="#<%= page.perma_id %>" data-page-id="<%= page.id %>">
+            <span></span>
+          </a>
+          <div class="scrollytelling-pageflow-navigation-tooltip">
+            <%= page.configuration["title"] %>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+
+  <ul class="scrollytelling-sharing">
+    <li><a href="#" id="share-tw"></a></li>
+    <li><a href="#" id="share-fb"></a></li>
   </ul>
-</nav>
 
-<ul class="scrollytelling-sharing">
-  <li><a href="#" id="share-tw"></a></li>
-  <li><a href="#" id="share-fb"></a></li>
-</ul>
-
-<ul class="scrollytelling-options">
-  <li><a href="#" id="mute-audio"></a></li>
-  <li><a href="#" id="play-audio" style="display: none;"></a></li>
-</ul>
+  <ul class="scrollytelling-options">
+    <li><a href="#" id="mute-audio"></a></li>
+    <li><a href="#" id="play-audio" style="display: none;"></a></li>
+  </ul>
+</div>

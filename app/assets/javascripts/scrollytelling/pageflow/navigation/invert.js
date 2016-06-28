@@ -1,27 +1,20 @@
-// Set class .page-invert on body if the active page has the class .invert
-pageflow.Invert = {
-
-  container: $('body'),
-
+// Set class .page-invert on widget element if the active page has the
+// class .invert
+$.widget('scrollytelling.scrollytellingNavigationInvert', {
   changeInvert: function(page) {
-    this.setInvert(page.element[0]);
+    this.setInvert(page.element);
   },
 
-  setInvert: function(page_element) {
-    $(page_element).hasClass('invert') ? this.container.addClass('page-invert') : this.container.removeClass('page-invert');
+  setInvert: function(pageElement) {
+    this.element.toggleClass('page-invert', pageElement.hasClass('invert'));
   },
 
-  init: function() {
-
+  _create: function() {
     // Set inverted class on first load
-    this.setInvert(pageflow.slides.currentPage()[0]);
+    this.setInvert(pageflow.slides.currentPage());
 
     // Listen to page changes
     pageflow.events.on('page:change', this.changeInvert.bind(this));
 
   }
-}
-
-pageflow.ready.then(function() {
-  pageflow.Invert.init();
 });
