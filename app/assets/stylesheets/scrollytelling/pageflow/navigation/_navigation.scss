@@ -77,8 +77,6 @@
   }
 
   .scrollytelling-pageflow-navigation-tooltip {
-    $bg-color: #000;
-
     right: 20px;
     position: absolute;
     top: -7px;
@@ -92,7 +90,7 @@
     line-height: 1;
     display: none;
 
-    background-color: $bg-color;
+    background-color: $scrollytelling-tooltip-bg-color;
     padding: 6px;
     padding-right: 20px;
     border-radius: 3px;
@@ -107,7 +105,7 @@
       position: absolute;
       pointer-events: none;
       border-color: rgba(255, 255, 255, 0);
-      border-left-color: $bg-color;
+      border-left-color: $scrollytelling-tooltip-bg-color;
       border-width: 5px;
       margin-top: -5px;
     }
