@@ -1,13 +1,18 @@
-$(document).on('click', '#mute-audio', function(event) {
-  event.preventDefault();
-  pageflow.settings.set('volume', 0);
-  $('#mute-audio').css({display: "none"});
-  $('#play-audio').css({display: "inline-block"});
-});
+$.widget('scrollytelling.audioControl', {
+  _create: function() {
+    $('#scrollytelling-audio', this.element).on('click', this.toggleAudio);
+  },
 
-$(document).on('click', '#play-audio', function(event) {
-  event.preventDefault();
-  pageflow.settings.set('volume', 1);
-  $('#mute-audio').css({display: "inline-block"});
-  $('#play-audio').css({display: "none"});
+  toggleAudio: function(event) {
+    event.preventDefault();
+    var target = $(event.target);
+
+    if(pageflow.settings.get('volume') > 0) {
+      pageflow.settings.set('volume', 0);
+      target.removeClass('audio-playing').addClass('audio-muted');
+    } else {
+      pageflow.settings.set('volume', 1);
+      target.removeClass('audio-muted').addClass('audio-playing');
+    }
+  }
 });

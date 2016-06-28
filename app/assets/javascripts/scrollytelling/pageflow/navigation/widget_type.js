@@ -4,5 +4,6 @@ pageflow.widgetTypes.register('scrollytelling_pageflow_navigation', {
     element.scrollytellingNavigationInvert();
     element.facebookSharing();
     element.twitterSharing();
+    element.audioControl();
   }
 });

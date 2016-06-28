@@ -69,7 +69,7 @@ ul.scrollytelling-options {
   list-style-type: none;
   margin: 0;
 
-  #mute-audio:before { content: "\f028"; }
-  #play-audio:before { content: "\f026"; }
+  .audio-playing:before { content: "\f028"; }
+  .audio-muted:before { content: "\f026"; }
 
 }
