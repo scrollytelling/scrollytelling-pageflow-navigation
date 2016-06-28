@@ -109,25 +109,20 @@
       border-width: 5px;
       margin-top: -5px;
     }
-
   }
 
   .page-invert & {
     a span {
-      background: black;
+      background: $scrollytelling-tooltip-bg-color;
     }
 
     .scrollytelling-pageflow-navigation-tooltip {
-
-      $bg-color: #fff;
-
-      color: black;
-      background-color: $bg-color;
+      color: $scrollytelling-tooltip-bg-color;
+      background-color: $scrollytelling-invert-tooltip-bg-color;
 
       &:after {
-        border-left-color: $bg-color;
+        border-left-color: $scrollytelling-invert-tooltip-bg-color;
       }
-
     }
   }
 }
