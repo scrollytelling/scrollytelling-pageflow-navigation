@@ -73,10 +73,3 @@ ul.scrollytelling-options {
   #play-audio:before { content: "\f026"; }
 
 }
-
-@media screen and (max-width: 768px) {
-  ul.scrollytelling-sharing,
-  ul.scrollytelling-options #back-to-top {
-    display: none;
-  }
-}
