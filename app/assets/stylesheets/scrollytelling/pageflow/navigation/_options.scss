@@ -36,11 +36,9 @@ ul.scrollytelling-options {
       }
     }
   }
-
 }
 
 ul.scrollytelling-sharing {
-
   position: absolute;
   top: 2%;
   right: 2%;
@@ -57,11 +55,13 @@ ul.scrollytelling-sharing {
 
   #share-tw:before { content: "\f099"; }
   #share-fb:before { content: "\f082"; }
+}
 
+.onsite ul.scrollytelling-sharing {
+  display: none;
 }
 
 ul.scrollytelling-options {
-
   position: absolute;
   bottom: 2%;
   right: 2%;
@@ -71,5 +71,4 @@ ul.scrollytelling-options {
 
   .audio-playing:before { content: "\f028"; }
   .audio-muted:before { content: "\f026"; }
-
 }
