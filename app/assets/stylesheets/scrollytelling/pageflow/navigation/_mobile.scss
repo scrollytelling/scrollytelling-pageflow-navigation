@@ -1,0 +1,52 @@
+.navigation_mobile {
+  .overview_mobile .credits a,
+  .imprint_mobile .credits a,
+  .sharing_mobile .credits a {
+    margin-top: 0;
+    color: inherit;
+    display: inline;
+  }
+
+  &.active {
+    .menu.index {
+      &:before {
+        font-family: "FontAwesome";
+        content: "\f00d";
+        font-size: 30px;
+      }
+    }
+  }
+  .menu.index,
+  .menu.sharing,
+  .menu.imprint,
+
+  .overview_mobile:after,
+  .imprint_mobile:after,
+  .sharing_mobile:after {
+    background-image: none;
+  }
+
+  .menu.index {
+    &:before {
+      font-family: "FontAwesome";
+      content: "\f0c9";
+      font-size: 30px;
+    }
+  }
+
+  .menu.sharing {
+    &:before {
+      font-family: "FontAwesome";
+      content: "\f045";
+      font-size: 30px;
+    }
+  }
+
+  .menu.imprint {
+    &:before {
+      font-family: "FontAwesome";
+      content: "\f05a";
+      font-size: 30px;
+    }
+  }
+}
