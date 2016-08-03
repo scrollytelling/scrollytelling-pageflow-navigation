@@ -8,7 +8,7 @@ pageflow.widgetTypes.register('scrollytelling_pageflow_navigation', {
 
     // hacky: if the entry URL matches 'onsite', push onsite class on the navigation.
     // this allows us to hide the sharing widgets for onsite productions.
-    if($('head link[href*="onsite"]')) {
+    if($('head link[href*="onsite"]').length > 0) {
       element.addClass('onsite');
     }
   }
