@@ -1,7 +1,10 @@
 <div data-widget="scrollytelling_pageflow_navigation">
   <nav id="scrollytelling-pageflow-navigation">
     <ul>
-      <% entry.pages.displayed_in_navigation.each do |page| %>
+      <% entry.pages.
+           displayed_in_navigation.
+           limit(25).
+           each do |page| %>
         <li>
           <a href="#<%= page.perma_id %>" data-page-id="<%= page.id %>">
             <span></span>
