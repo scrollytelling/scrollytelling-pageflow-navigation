@@ -1,0 +1,21 @@
+.scrollytelling-credits {
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  img {
+    width: 1em;
+    height: 1em;
+    margin-right: .5em;
+    position: relative;
+    top: .5em;
+  }
+}
