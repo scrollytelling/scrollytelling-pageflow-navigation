@@ -1,22 +1,6 @@
 .navigation_mobile {
   .parent_page {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: 6%;
-    left: 12px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .parent_page:before {
-    content: "\f0a8";
-    font-family: "FontAwesome";
-    font-size: 26px;
-  }
-
-  .parent_page:after {
-    display: none;
+    display: none; /* hide here because we include it in all nav */
   }
 
   .overview_mobile .credits a,
@@ -32,7 +16,7 @@
       &:before {
         font-family: "FontAwesome";
         content: "\f00d";
-        font-size: 30px;
+        font-size: $scrollytelling-fa-size;
       }
     }
   }
@@ -50,7 +34,7 @@
     &:before {
       font-family: "FontAwesome";
       content: "\f0c9";
-      font-size: 30px;
+      font-size: $scrollytelling-fa-size;
     }
   }
 
@@ -58,7 +42,7 @@
     &:before {
       font-family: "FontAwesome";
       content: "\f045";
-      font-size: 30px;
+      font-size: $scrollytelling-fa-size;
     }
   }
 
@@ -66,7 +50,7 @@
     &:before {
       font-family: "FontAwesome";
       content: "\f05a";
-      font-size: 30px;
+      font-size: $scrollytelling-fa-size;
     }
   }
 }

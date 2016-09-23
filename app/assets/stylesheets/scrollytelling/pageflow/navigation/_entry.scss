@@ -1,17 +1,17 @@
 .entry {
   .indicator {
-    left: 12px;
+    left: 2%;
     bottom: 2%;
     height: 40px;
     padding: 0 0 0 40px;
-    line-height: 30px;
+    line-height: $scrollytelling-fa-size;
   }
 
   .scroll_indicator:before {
     content: "\f0ab";
     font-family: "FontAwesome";
     font-size: 26px;
-    padding-left: 9px;
+    margin-right: .5em;
     background-image: none;
   }
 
