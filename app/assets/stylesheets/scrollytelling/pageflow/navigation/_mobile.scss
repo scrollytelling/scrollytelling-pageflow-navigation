@@ -1,4 +1,24 @@
 .navigation_mobile {
+  .parent_page {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 6%;
+    left: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .parent_page:before {
+    content: "\f0a8";
+    font-family: "FontAwesome";
+    font-size: 26px;
+  }
+
+  .parent_page:after {
+    display: none;
+  }
+
   .overview_mobile .credits a,
   .imprint_mobile .credits a,
   .sharing_mobile .credits a {

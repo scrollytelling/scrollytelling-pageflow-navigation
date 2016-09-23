@@ -1,0 +1,22 @@
+.entry {
+  .indicator {
+    left: 12px;
+    bottom: 2%;
+    height: 40px;
+    padding: 0 0 0 40px;
+    line-height: 30px;
+  }
+
+  .scroll_indicator:before {
+    content: "\f0ab";
+    font-family: "FontAwesome";
+    font-size: 26px;
+    padding-left: 9px;
+    background-image: none;
+  }
+
+  .scroll_indicator.invert:before {
+    color: black;
+    background-image: none;
+  }
+}
