@@ -54,3 +54,11 @@
     }
   }
 }
+
+.page-invert {
+  .navigation_mobile {
+    .menu.index:before {
+      color: $scrollytelling-invert-nav-color;
+    }
+  }
+}

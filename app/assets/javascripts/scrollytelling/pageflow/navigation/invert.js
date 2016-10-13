@@ -7,6 +7,7 @@ $.widget('scrollytelling.scrollytellingNavigationInvert', {
 
   setInvert: function(pageElement) {
     this.element.toggleClass('page-invert', pageElement.hasClass('invert'));
+    $('.navigation_mobile').toggleClass('page-invert', pageElement.hasClass('invert'));
   },
 
   _create: function() {

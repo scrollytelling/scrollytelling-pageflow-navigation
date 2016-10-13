@@ -32,7 +32,7 @@ ul.scrollytelling-options {
       left: 0;
 
       .page-invert & {
-        color: #000;
+        color: $scrollytelling-invert-nav-color;
       }
     }
   }

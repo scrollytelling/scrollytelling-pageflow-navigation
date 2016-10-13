@@ -16,7 +16,7 @@
   }
 
   .scroll_indicator.invert:before {
-    color: black;
+    color: $scrollytelling-invert-nav-color;
     background-image: none;
   }
 }
