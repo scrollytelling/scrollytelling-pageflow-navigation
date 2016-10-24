@@ -2,9 +2,8 @@
   .indicator {
     left: 2%;
     bottom: 2%;
-    height: 40px;
     padding: 0 0 0 40px;
-    line-height: $scrollytelling-fa-size;
+    @include scrollytelling-indicator;
   }
 
   .scroll_indicator:before {

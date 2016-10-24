@@ -3,7 +3,19 @@ $scrollytelling-tooltip-bg-color: black !default;
 $scrollytelling-invert-tooltip-bg-color: white !default;
 $scrollytelling-sharing-size: 40px !default;
 $scrollytelling-fa-size: 30px !default;
+$scrollytelling-nav-color: white !default;
 $scrollytelling-invert-nav-color: black !default;
+
+@mixin scrollytelling-indicator {
+  cursor: pointer;
+  color: $scrollytelling-nav-color;
+  text-transform: uppercase;
+  font-family: sourcesanspro;
+  text-shadow: 1px 1px 4px #2b2b2b;
+  letter-spacing: 3px;
+  line-height: $scrollytelling-fa-size;
+  height: $scrollytelling-sharing-size;
+}
 
 @import "./navigation/navigation";
 @import "./navigation/mobile";

@@ -61,7 +61,7 @@
       height: 4px;
       width: 4px;
       border: 0;
-      background: white;
+      background: $scrollytelling-nav-color;
       left: 50%;
       top: 50%;
       margin: -2px 0 0 -2px;
@@ -80,7 +80,7 @@
     right: 30px;
     position: absolute;
     top: -1px;
-    color: white;
+    color: $scrollytelling-nav-color;
     font-size: 14px;
     white-space: nowrap;
     max-width: 220px;
