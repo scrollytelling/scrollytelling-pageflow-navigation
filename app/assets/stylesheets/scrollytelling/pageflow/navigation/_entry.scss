@@ -2,8 +2,12 @@
   .indicator {
     left: 2%;
     bottom: 2%;
-    padding: 0 0 0 40px;
+    padding: 0;
     @include scrollytelling-indicator;
+  }
+
+  .indicator.invert {
+    color: $scrollytelling-invert-nav-color;
   }
 
   .scroll_indicator:before {
