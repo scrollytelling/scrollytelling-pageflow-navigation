@@ -9,10 +9,11 @@ $scrollytelling-invert-nav-color: black !default;
 @mixin scrollytelling-indicator {
   cursor: pointer;
   color: $scrollytelling-nav-color;
+  font-size: 16px;
   text-transform: uppercase;
   font-family: sourcesanspro;
   text-shadow: 1px 1px 4px #2b2b2b;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   line-height: $scrollytelling-fa-size;
   height: $scrollytelling-sharing-size;
 }
