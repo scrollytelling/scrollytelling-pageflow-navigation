@@ -15,6 +15,10 @@ $scrollytelling-invert-nav-color: black !default;
   letter-spacing: 1px;
   line-height: $scrollytelling-fa-size;
   height: $scrollytelling-sharing-size;
+
+  @include desktop {
+    letter-spacing: 3px;
+  }
 }
 
 @import "./navigation/navigation";
