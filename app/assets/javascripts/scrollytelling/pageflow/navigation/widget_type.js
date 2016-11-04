@@ -9,7 +9,7 @@ pageflow.widgetTypes.register('scrollytelling_pageflow_navigation', {
     // Enable the parent page globally (Pageflow enables it only in mobile nav).
     $('.parent_page', element).parentPageButton({
       visibleClass: 'is_visible'
-    })
+    });
 
     // hacky: if the entry URL matches 'onsite', push onsite class on the navigation.
     // this allows us to hide the sharing widgets for onsite productions.
