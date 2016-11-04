@@ -1,10 +1,10 @@
 .parent_page {
+  position: absolute;
   left: 8%;
   bottom: 5%;
-  visibility: hidden;
-  @include transform(translate3d(0, -100px, 0));
-  @include transition(transform 0.4s ease, visibility 0.4s, right 250ms);
+  opacity: 0;
   @include scrollytelling-indicator;
+  transition: opacity 1s ease;
 
   &:before {
     content: "\f0a8";
@@ -13,8 +13,8 @@
   }
 
   &.is_visible {
-    visibility: visible;
-    @include transform(translate3d(0, 0, 0));
+    opacity: 1;
+    transition: opacity 0.5s ease 2.5s;
   }
 }
 
