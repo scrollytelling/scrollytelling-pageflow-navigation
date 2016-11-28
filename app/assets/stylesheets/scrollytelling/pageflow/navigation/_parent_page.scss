@@ -1,10 +1,14 @@
 .parent_page {
   position: absolute;
   left: 8%;
-  bottom: 5%;
+  bottom: 7%;
   opacity: 0;
   @include scrollytelling-indicator;
   transition: opacity 1s ease;
+
+  @include desktop {
+    bottom: 5%;
+  }
 
   &:before {
     content: "\f0a8";
