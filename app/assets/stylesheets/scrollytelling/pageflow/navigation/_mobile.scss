@@ -60,3 +60,9 @@
     color: $scrollytelling-invert-nav-color;
   }
 }
+
+.navigation_mobile.page-invert.active {
+  .menu.index:before {
+    color: white;
+  }
+}
