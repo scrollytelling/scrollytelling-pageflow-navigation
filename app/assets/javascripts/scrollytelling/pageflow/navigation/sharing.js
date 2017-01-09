@@ -22,7 +22,7 @@ $.widget('scrollytelling.twitterSharing', {
     event.preventDefault();
     var summary = $("meta[name='description']").attr('content');
     window.scrollytelling = window.scrollytelling || {};
-    var twitter_via = window.scrollytelling.twitter_via || 'Scrollytellio';
+    var twitter_via = window.scrollytelling.twitter_via || 'scrollytelling';
     var twSharer = window.open(
       "//twitter.com/intent/tweet?text="+encodeURIComponent(summary)+"&amp;via="+twitter_via+"&amp;url="+encodeURIComponent(location.href.replace(location.hash,"")),
       "Twitter",
