@@ -7,7 +7,7 @@
            displayed_in_navigation.
            limit(25).
            each do |page| %>
-        <li>
+        <li data-page-chapter-id="<%= page.chapter_id %>">
           <a href="#<%= page.perma_id %>" data-page-id="<%= page.id %>">
             <span></span>
           </a>
