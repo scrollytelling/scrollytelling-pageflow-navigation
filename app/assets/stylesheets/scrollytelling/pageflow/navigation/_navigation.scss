@@ -20,15 +20,11 @@
   }
 
   li {
+    display: block;
     width: 25px;
     height: 25px;
     margin: 2px 5px;
     position: relative;
-    display: none;
-
-    &.currentChapter {
-      display: block;
-    }
   }
 
   li:hover {
