@@ -1,6 +1,7 @@
 require "scrollytelling/pageflow/navigation/plugin"
 require "scrollytelling/pageflow/navigation/widget_type"
 require "scrollytelling/pageflow/navigation/engine"
+require "scrollytelling/pageflow/navigation/version"
 
 module Scrollytelling
   module Pageflow
