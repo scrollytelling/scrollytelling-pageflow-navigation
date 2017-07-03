@@ -39,15 +39,12 @@ ul.scrollytelling-options {
 }
 
 ul.scrollytelling-sharing {
-  position: absolute;
   top: 2%;
   right: 2%;
   width: 200px;
   max-width: 80%;
   height: 40px;
-  z-index: 5;
   text-align: right;
-  margin: 0;
 
   li {
     display: inline;
@@ -62,12 +59,8 @@ ul.scrollytelling-sharing {
 }
 
 ul.scrollytelling-options {
-  position: absolute;
   bottom: 2%;
   right: 22px;
-  z-index: 5;
-  list-style-type: none;
-  margin: 0;
 
   .audio-playing:before { content: "\f028"; }
   .audio-muted:before { content: "\f026"; }
