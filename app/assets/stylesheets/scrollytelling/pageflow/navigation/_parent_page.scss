@@ -1,9 +1,8 @@
 .parent_page {
-  position: absolute;
+  @include scrollytelling-indicator;
   left: 8%;
   bottom: 7%;
   opacity: 0;
-  @include scrollytelling-indicator;
   transition: opacity 1s ease;
 
   @include desktop {

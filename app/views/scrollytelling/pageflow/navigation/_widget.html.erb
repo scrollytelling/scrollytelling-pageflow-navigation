@@ -1,5 +1,5 @@
 <div data-widget="scrollytelling_pageflow_navigation">
-  <div class="parent_page"><%= t('pageflow.public.back') %></div>
+  <!-- <div class="parent_page"><%= t('pageflow.public.back') %></div> -->
 
   <nav id="scrollytelling-pageflow-navigation">
     <ul>
@@ -22,17 +22,17 @@
   </nav>
 
   <% if entry.home_button.enabled? %>
-  <ul class="scrollytelling-home_button">
-    <li><a href="<%= entry.home_button.url %>" id="home-button">Ga naar home</a></li>
+  <ul class="scrollytelling-home_button scrolly-nav-box">
+    <li><%= link_to 'Terug naar home', entry.home_button.url, id: 'home-button', title: t('pageflow.public.show_home') %></li>
   </ul>
   <% end %>
 
-  <ul class="scrollytelling-sharing">
+  <ul class="scrollytelling-sharing scrolly-nav-box">
     <li><a href="#" id="share-tw"></a></li>
     <li><a href="#" id="share-fb"></a></li>
   </ul>
 
-  <ul class="scrollytelling-options">
+  <ul class="scrollytelling-options scrolly-nav-box">
     <li><a href="#" id="scrollytelling-audio" class="audio-playing"></a></li>
   </ul>
 </div>
