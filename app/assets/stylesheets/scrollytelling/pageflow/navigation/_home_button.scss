@@ -1,0 +1,17 @@
+ul.scrollytelling-home_button {
+  color: $scrollytelling-nav-color;
+  font-size: 28px;
+
+  position: absolute;
+  top: 2%;
+  left: 22px;
+  z-index: 5;
+  list-style-type: none;
+  margin: 0;
+
+  .page-invert & {
+    color: $scrollytelling-invert-nav-color;
+  }
+
+
+}
