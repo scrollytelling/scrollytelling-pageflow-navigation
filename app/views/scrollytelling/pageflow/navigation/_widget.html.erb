@@ -21,6 +21,12 @@
     </ul>
   </nav>
 
+  <% if entry.home_button.enabled? %>
+  <ul class="scrollytelling-home_button">
+    <li><a href="<%= entry.home_button.url %>" id="home-button">Ga naar home</a></li>
+  </ul>
+  <% end %>
+
   <ul class="scrollytelling-sharing">
     <li><a href="#" id="share-tw"></a></li>
     <li><a href="#" id="share-fb"></a></li>
