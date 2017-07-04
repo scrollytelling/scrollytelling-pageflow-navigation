@@ -23,7 +23,10 @@
 
   <% if entry.home_button.enabled? %>
   <ul class="scrollytelling-home_button scrolly-nav-box">
-    <li><%= link_to 'Terug naar home', entry.home_button.url, id: 'home-button', title: t('pageflow.public.show_home') %></li>
+    <li><%= link_to t('pageflow.scrollytelling_pageflow_navigation.home_link'),
+                    entry.home_button.url,
+                    id: 'home-button',
+                    title: t('pageflow.scrollytelling_pageflow_navigation.home_title', url: entry.home_button.url) %></li>
   </ul>
   <% end %>
 

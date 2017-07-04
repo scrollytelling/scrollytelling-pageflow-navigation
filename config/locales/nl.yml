@@ -1,4 +1,6 @@
 nl:
   pageflow:
     scrollytelling_pageflow_navigation:
+      home_link: ' Terug naar home'
+      home_title: 'Je gaat dan naar %s{url}'
       widget_type_name: Scrollytelling stippen met tooltips
