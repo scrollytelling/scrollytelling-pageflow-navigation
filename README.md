@@ -4,6 +4,10 @@ This Pageflow plugin replaces the built-in Pageflow navigation with the Scrollyt
 
 The Scrollytelling navigation uses dots to show progress instead of thumbnails. This plugin does not replace the mobile Pageflow navigation; only the desktop navigation.
 
+### This is the 1-13-stable branch
+
+This branch targets `gem 'pageflow', '~> 0.11.0'`.
+
 ## Examples
 
 For examples see the various stories on [our homepage](https://www.scrollytelling.io/).
