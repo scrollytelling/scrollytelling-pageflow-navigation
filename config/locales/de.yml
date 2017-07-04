@@ -1,4 +1,6 @@
 de:
   pageflow:
     scrollytelling_pageflow_navigation:
+      home_link: ' Zuruch nach Home'
+      home_title: 'Du geths denn nach %s{url}'
       widget_type_name: Scrollytelling Punkte mit Tooltips
