@@ -1,6 +1,6 @@
 en:
   pageflow:
     scrollytelling_pageflow_navigation:
-      home_link: ' Back to home'
-      home_title: 'That will take you to %s{url}'
+      home_link: ' Home'
+      home_title: 'That will take you to %{url}'
       widget_type_name: Scrollytelling dots with tooltips
