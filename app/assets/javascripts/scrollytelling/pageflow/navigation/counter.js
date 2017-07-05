@@ -16,7 +16,7 @@ $.widget('scrollytelling.scrollytellingNavigationCounter', {
     pageflow.events.on('page:change', this.updateActive.bind(this));
 
     // Set click handler
-    $('a', this.element).on('click', this.onClick);
+    $('nav a', this.element).on('click', this.onClick);
   },
 
   onClick: function(event) {
