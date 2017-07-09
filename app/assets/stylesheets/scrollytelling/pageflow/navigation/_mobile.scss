@@ -1,10 +1,11 @@
 .navigation_mobile {
   .parent_page {
-    display: none; /* hide here because we include it in all nav */
+    display: none;
+    /* hide here because we include it in all nav */
   }
 
-  .overview_mobile .credits a,
   .imprint_mobile .credits a,
+  .overview_mobile .credits a,
   .sharing_mobile .credits a {
     margin-top: 0;
     color: inherit;
@@ -12,6 +13,55 @@
   }
 
   &.active {
+    .sharing_mobile {
+      a.share.facebook {
+        p:before {
+          font-family: "FontAwesome";
+          content: "\f082";
+          margin-right: 12px;
+        }
+      }
+
+      a.share.twitter {
+        p:before {
+          font-family: "FontAwesome";
+          content: "\f081";
+          margin-right: 12px;
+        }
+      }
+
+      a.share.whatsapp {
+        img {
+          width: 16px;
+          height: 16px;
+          border: none;
+          float: left;
+          margin-right: 10px;
+          padding-top: 2px;
+        }
+      }
+
+      li {
+        background-color: darkgrey;
+        font-family: sourcesanspro;
+
+        > a {
+          color: white;
+          padding-top: 10px;
+          height: 50px;
+          margin-left: 24px;
+        }
+
+        > a:before {
+          display: none;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
     .menu.index {
       &:before {
         font-family: "FontAwesome";
@@ -20,12 +70,12 @@
       }
     }
   }
+
+  .imprint_mobile:after,
+  .menu.imprint,
   .menu.index,
   .menu.sharing,
-  .menu.imprint,
-
   .overview_mobile:after,
-  .imprint_mobile:after,
   .sharing_mobile:after {
     background-image: none;
   }
@@ -53,16 +103,16 @@
       font-size: $scrollytelling-fa-size;
     }
   }
-}
 
-.navigation_mobile.page-invert {
-  .menu.index:before {
-    color: $scrollytelling-invert-nav-color;
+  &.page-invert {
+    .menu.index:before {
+      color: $scrollytelling-invert-nav-color;
+    }
   }
-}
 
-.navigation_mobile.page-invert.active {
-  .menu.index:before {
-    color: white;
+  &.page-invert.active {
+    .menu.index:before {
+      color: white;
+    }
   }
 }
