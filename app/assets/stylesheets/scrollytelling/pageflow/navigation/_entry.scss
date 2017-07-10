@@ -1,8 +1,8 @@
 .entry {
   .indicator {
     @include scrollytelling-indicator;
-    left: 8%;
-    bottom: 2%;
+    left: 100px;
+    bottom: 20px;
   }
 
   .indicator.invert {
