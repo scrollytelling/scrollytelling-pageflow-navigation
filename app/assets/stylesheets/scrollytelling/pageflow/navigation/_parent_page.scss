@@ -1,13 +1,9 @@
 .parent_page {
   @include scrollytelling-indicator;
-  left: 8%;
-  bottom: 7%;
+  left: 100px;
+  bottom: 70px;
   opacity: 0;
   transition: opacity 1s ease;
-
-  @include desktop {
-    bottom: 5%;
-  }
 
   &:before {
     content: "\f0a8";

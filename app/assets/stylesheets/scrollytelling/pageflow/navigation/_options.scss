@@ -39,8 +39,8 @@ ul.scrollytelling-options {
 }
 
 ul.scrollytelling-sharing {
-  top: 2%;
-  right: 2%;
+  top: 20px
+  right: 70px;
   width: 200px;
   max-width: 80%;
   height: 40px;
@@ -59,8 +59,8 @@ ul.scrollytelling-sharing {
 }
 
 ul.scrollytelling-options {
-  bottom: 2%;
-  right: 22px;
+  bottom: 20px;
+  right: 70px;
 
   .audio-playing:before { content: "\f028"; }
   .audio-muted:before { content: "\f026"; }
