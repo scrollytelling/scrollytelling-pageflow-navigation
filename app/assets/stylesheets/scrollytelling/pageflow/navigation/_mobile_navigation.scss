@@ -1,7 +1,42 @@
 .navigation_mobile {
   .parent_page {
-    display: none;
-    /* hide here because we include it in all nav */
+    display: none; /* hide here because we include it in all nav */
+  }
+
+  .menu {
+    width: auto;
+    height: auto;
+
+    &.index {
+      top: 16px;
+    }
+
+    &.index:before {
+      font-family: "FontAwesome";
+      content: "\f0c9";
+      font-size: 20px;
+    }
+
+    &.sharing:before {
+      font-family: "FontAwesome";
+      content: "\f1e0";
+      font-size: $scrollytelling-fa-size;
+    }
+
+    &.imprint:before {
+      font-family: "FontAwesome";
+      content: "\f05a";
+      font-size: $scrollytelling-fa-size;
+    }
+  }
+
+  .imprint_mobile:after,
+  .menu.imprint,
+  .menu.index,
+  .menu.sharing,
+  .overview_mobile:after,
+  .sharing_mobile:after {
+    background-image: none;
   }
 
   .imprint_mobile .credits a,
@@ -64,47 +99,8 @@
 
     .menu.index {
       &:before {
-        font-family: "FontAwesome";
         content: "\f00d";
-        font-size: $scrollytelling-fa-size;
       }
-    }
-  }
-
-  .imprint_mobile:after,
-  .menu.imprint,
-  .menu.index,
-  .menu.sharing,
-  .overview_mobile:after,
-  .sharing_mobile:after {
-    background-image: none;
-  }
-
-  .menu.index {
-    @include mobile {
-      top: 11px;
-    }
-
-    &:before {
-      font-family: "FontAwesome";
-      content: "\f0c9";
-      font-size: $scrollytelling-fa-size;
-    }
-  }
-
-  .menu.sharing {
-    &:before {
-      font-family: "FontAwesome";
-      content: "\f1e0";
-      font-size: $scrollytelling-fa-size;
-    }
-  }
-
-  .menu.imprint {
-    &:before {
-      font-family: "FontAwesome";
-      content: "\f05a";
-      font-size: $scrollytelling-fa-size;
     }
   }
 
