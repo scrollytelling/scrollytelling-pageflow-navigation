@@ -3,6 +3,11 @@
     @include scrollytelling-indicator;
     left: 100px;
     bottom: 20px;
+
+    @include mobile {
+      left: 20px;
+    }
+
   }
 
   .indicator.invert {
