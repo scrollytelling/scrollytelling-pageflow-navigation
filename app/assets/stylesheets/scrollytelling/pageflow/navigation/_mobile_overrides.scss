@@ -1,0 +1,20 @@
+@include mobile {
+  #scrollytelling-pageflow-navigation,
+  ul.scrollytelling-sharing {
+    display: none;
+  }
+
+  ul.scrollytelling-home_button {
+    top: 10px;
+    left: 20px;
+  }
+
+  ul.scrollytelling-options {
+    bottom: 20px;
+    right: 10px;
+  }
+
+  .entry .indicator {
+    left: 20px;
+  }
+}
