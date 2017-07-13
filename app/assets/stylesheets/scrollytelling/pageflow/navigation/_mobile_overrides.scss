@@ -1,4 +1,4 @@
-@include mobile {
+@media screen and (max-width: 900px) {
   #scrollytelling-pageflow-navigation,
   ul.scrollytelling-sharing {
     display: none;
