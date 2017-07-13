@@ -46,10 +46,6 @@ ul.scrollytelling-sharing {
   height: 40px;
   text-align: right;
 
-  @include mobile {
-    right: 20px;
-  }
-
   li {
     display: inline;
   }

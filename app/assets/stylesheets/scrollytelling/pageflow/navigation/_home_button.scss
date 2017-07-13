@@ -3,10 +3,6 @@ ul.scrollytelling-home_button {
   left: 100px;
   top: 20px;
 
-  @include mobile {
-    left: 20px;
-  }
-
   a {
     color: $scrollytelling-nav-color;
 
