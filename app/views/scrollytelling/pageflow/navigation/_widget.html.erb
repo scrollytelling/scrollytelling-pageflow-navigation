@@ -11,9 +11,9 @@
           <a href="#<%= page.perma_id %>" data-page-id="<%= page.id %>">
             <span></span>
           </a>
-          <% if page.configuration["title"].present? %>
+          <% if page.configuration["title"].presence || page.configuration["subtitle"].presence %>
             <div class="scrollytelling-pageflow-navigation-tooltip">
-              <%= page.configuration["title"] %>
+              <%= page.configuration["title"].presence || page.configuration["subtitle"].presence %>
             </div>
           <% end %>
         </li>
